@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+* {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+    min-height: 100vh;
+    padding: 5rem;
+    transition: background-color 0.3s linear ,color 0.5s linear;
+}
+
+.toggle-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+body.dark {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+
+
+label {
+    background-color: #1f1f1f;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+    display: inline-block;
+    color: transparent;
+}
+
+body.dark label {
+    color: transparent;
+    background-color: white;
+    
+}
+
+
+
+input {
+    visibility: hidden;
+}
